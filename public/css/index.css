@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Reenie+Beanie&display=swap');
+
 :root{
     --colorNormal:#ffffcc;
     --colorImportante:#ec7063;
@@ -11,17 +12,70 @@ body{
 .cardNormal{
     
     background-color: var(--colorNormal);
+    transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
     -moz-transform:rotate(-3deg);
 }
+.cardNormal:hover{
+    -webkit-transform:scale(1.15);
+-moz-transform:scale(1.15);
+-ms-transform:scale(1.15);
+-o-transform:scale(1.15);
+transform:scale(1.15);
+}
+.cardNormal:nth-child(2n+1):hover{
+    -webkit-transform:scale(1.15);
+-moz-transform:scale(1.15);
+-ms-transform:scale(1.15);
+-o-transform:scale(1.15);
+transform:scale(1.15);
+}
+.cardNormal:nth-child(2n+1){
+    
+    background-color: var(--colorNormal);
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -moz-transform:rotate(3deg);
+}
 .cardImportante{
     
     background-color: var(--colorImportante);
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+}
+.cardImportante:nth-child(2n+1){
+    
+    background-color: var(--colorImportante);
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -moz-transform:rotate(33deg);
+}
+.cardImportante:hover{
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+}
+.cardImportante:nth-child(2n+1):hover{
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
 }
 .equis{
     float: right;
 }
 p{
     font-family: 'Reenie Beanie', cursive;
+    font-size: 2 em;
+}
+h5{
+    font-size: 1.2em;
 }

@@ -27,9 +27,13 @@ export function TodoList(){
         
         const task1 = taskRef1.current.value;
         const task2 = taskRef2.current.value;
-        const task3 = taskRef3.current.value;
-
-        if (task1 === '') return;
+        var task3 = taskRef3.current.checked;
+        //alert(task3)
+        if (task2 === ''){ 
+            alert("Debe ingresar como mínimo la descripción del Post It");
+            return;
+        }
+        if(task3===true){task3=1}else{task3=0}
 
         setTodos((prevTodos) => {
             const newTask = {
@@ -44,7 +48,7 @@ export function TodoList(){
 
         taskRef1.current.value = null
         taskRef2.current.value = null
-        //taskRef3.current.checked = false
+        taskRef3.current.checked = false
     }
 
     
@@ -56,7 +60,7 @@ export function TodoList(){
 
             <div className="input-group mt-4 mb-4">
                 <input ref={taskRef1} placeholder='Título' className="form-control" type="text"></input>
-                <input ref={taskRef2} placeholder='Descripción' className="form-control" type="text"></input>
+                <input ref={taskRef2} placeholder='Descripción' className="form-control" type="text" required></input>
                 <input ref={taskRef3} className="form-check-input m-2" type="checkbox"></input>Importante!
                 <button onClick={agregarTarea} className="btn btn-dark ms-2"><i className="bi">Agregar</i></button>
                 
