@@ -33,6 +33,7 @@ export function TodoList(){
             alert("Debe ingresar como mínimo la descripción del Post It");
             return;
         }
+        //identifico el PosIt declarado como importante!
         if(task3===true){task3=1}else{task3=0}
 
         setTodos((prevTodos) => {
