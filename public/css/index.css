@@ -8,6 +8,7 @@
 }
 body{
     background-color: var(--colorBackground);
+    text-align: center;
 }
 .cardNormal{
     
@@ -79,12 +80,14 @@ body{
 p{
     font-family: 'Reenie Beanie', cursive;
     font-size: 1.5em;
+    text-align: left;
 }
 h1{
     color: var(--colorGrisOscuro);
 }
 h5{
     font-size: 1.2em;
+    text-align: left;
 }
 label{
     color: white;

@@ -60,8 +60,8 @@ export function TodoList(){
             <h1>Post It Simulator</h1>
 
             <div className="input-group mt-4 mb-4">
-                <input ref={taskRef1} placeholder='Título' className="form-control" type="text"></input>
-                <input ref={taskRef2} placeholder='Descripción' className="form-control" type="text" required></input>
+                <input ref={taskRef1} placeholder='Título' className="form-control m-1" type="text"></input>
+                <input ref={taskRef2} placeholder='Descripción' className="form-control m-1" type="text" required></input>
                 <input ref={taskRef3} className="form-check-input m-2" type="checkbox"></input><label>Importante!</label>
                 <button onClick={agregarTarea} className="btn btn-dark ms-2"><i className="bi">Agregar</i></button>
                 
